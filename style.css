@@ -11,6 +11,12 @@
     --white: #F8F8F8;
 }
 
+body{
+    max-width: 1900px;
+    position: relative;
+    margin: 0 auto;
+}
+
 
 /* header */
 
@@ -19,7 +25,7 @@ header{
     align-items: center;
     justify-content: space-between;
     height: 100px;
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 0;
     z-index: 20;
@@ -67,6 +73,8 @@ header{
     height: 100vh;
     background: url(img/index-banner.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     background-position-y: -100px;
     filter: brightness(.8);
 }
@@ -271,7 +279,7 @@ footer{
     background-color: var(--black);
     color: var(--white);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 200px;
 }
