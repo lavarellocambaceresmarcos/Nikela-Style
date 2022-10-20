@@ -348,3 +348,165 @@ footer ul, footer div {
     font-weight: bold;
     margin-bottom: 15px;
 }
+
+#burguer-menu{
+    margin-right: 60px;
+    font-size: 30px;
+    background: transparent;
+    border: none;
+    color: var(--white);
+}
+
+#mobile-menu{
+    background-color: var(--white);
+    position: fixed;
+    top:0;
+    right:-200%;
+    z-index: 30;
+    width: 300px;
+    height: 100%;
+    box-shadow: 1px 1px 10px var(--black);
+    transition: all .5s ease;
+}
+
+#mobile-menu ul {
+    list-style: none;
+}
+
+#mobile-menu ul li {
+    font-size: 24px;
+}
+
+#mobile-menu ul li a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.media-mobile-title {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.mobile-navbar-list{
+    margin: 30px 0;
+}
+
+.mobile-navbar-list li, .mobile-nav-social-list li {
+    margin: 30px;
+}
+
+.mobile-nav-social-list li a i {
+   margin-right: 10px; 
+}
+
+#close-menu-btn{
+    border: none;
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width:1201px) {
+    #burguer-menu,#mobile-menu{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:1200px) {
+    footer ul li {
+        font-size: 11px;
+    }
+
+    nav,.nav-social-list {
+        display: none;
+    }
+
+}
+@media screen and (max-width:1150px) {
+    footer{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .div-line {
+        height: 1px;
+        width: 90%;
+        border: none;
+        background: white;
+    }
+
+    .sobre-nosotros-container{
+        width: 85%;
+    }
+}
+@media screen and (max-width:580px) {
+    .main-banner-cont a {
+        font-size: 50px;
+        height: 95px;
+    }
+
+    .right-line, .left-line {
+        transform: translateX(0);
+    }
+
+    .principales-compras-index-cards-container {
+        flex-direction: column;
+    }
+
+    .card-index {
+        margin-top: 30px;
+    }
+    
+    .title-container {
+        margin-bottom: 50px;
+        margin-top: 10px;
+    }
+
+    .left-box{
+        display: none;
+    }
+    
+    .right-box h2{
+        font-size: 30px;
+        background-color: var(--black);
+        color: var(--white);
+        width: 100%;
+        position: absolute;
+        top: 0;
+        padding: 10px;
+        box-shadow: 1px 1px 4px var(--black);
+        text-align: center;
+    }
+
+    .right-box p {
+        width: auto;
+        text-align: center;
+        margin-top: 60px;
+        transform: translateY(20px);
+    }
+
+    .right-box a {
+        width: 260px;
+        height: 56px;
+        font-size: 24px;
+    }
+
+    .right-box {
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+    }
+
+    .sobre-nosotros-container {
+        height: 300px;
+    }
+
+    #burguer-menu {
+        margin-right:30px;
+    }
+
+    .nav-logo {
+        margin-left: 25px;
+    }
+}
