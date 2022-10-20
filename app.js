@@ -5,7 +5,7 @@ let mobileMenu = document.getElementById('mobile-menu');
 let burguerMenu = document.getElementById('burguer-menu');
 
 closeBtn.addEventListener('click', function(){
-    mobileMenu.style.right="-200%"
+    mobileMenu.style.right="-200%";
 })
 
 burguerMenu.addEventListener('click', function(){

@@ -79,6 +79,14 @@ header{
     filter: brightness(.8);
 }
 
+.banner-tienda {
+    background: url(img/tienda-banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -100px;
+}
+
 .main-banner-cont {
     display: flex;
     justify-content: center;
