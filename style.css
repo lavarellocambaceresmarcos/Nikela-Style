@@ -84,7 +84,14 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y: -100px;
+    background-position-y: -180px;
+}
+.banner-nosotros {
+    background: url(img/nosotros-banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -180px;
 }
 
 .main-banner-cont {
@@ -190,6 +197,26 @@ header{
 }
 .Carteras {
     background:url(img/carteras.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.local-1 {
+    background:url(img/local-1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.local-2 {
+    background:url(img/local-2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.local-3 {
+    background:url(img/local-3.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -414,6 +441,40 @@ footer ul, footer div {
     margin-top: 10px;
 }
 
+.drop-btns-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.drop-btns-container button {
+    width: 60%;
+    height: 80px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+    position: relative;
+    border: 2px solid var(--black);
+    background: transparent;
+    box-shadow: 1px 1px 5px #37353546;
+    border-radius: 3px;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+.drop-btns-container button:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.drop-btns-container button i {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    font-size: 20px;
+}
+
 @media screen and (min-width:1201px) {
     #burguer-menu,#mobile-menu{
         display: none;
@@ -447,8 +508,12 @@ footer ul, footer div {
     .sobre-nosotros-container{
         width: 85%;
     }
+
+    .drop-btns-container button {
+        width: 85%;
+    }
 }
-@media screen and (max-width:580px) {
+@media screen and (max-width:750px) {
     .main-banner-cont a {
         font-size: 50px;
         height: 95px;
@@ -506,8 +571,26 @@ footer ul, footer div {
         position: relative;
     }
 
+    #right-box-nosotros {
+        justify-content: center;
+    }
+
+    .first-text{
+        padding-top: 70px;
+    }
+
+    #right-box-nosotros p{
+        margin-top: 0;
+        transform: translateY(0);
+        margin: 20px;
+    }
+
     .sobre-nosotros-container {
         height: 300px;
+    }
+
+    #sob-nos-original {
+        height: auto;
     }
 
     #burguer-menu {
