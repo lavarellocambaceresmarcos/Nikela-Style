@@ -182,14 +182,40 @@ header{
     height: 400px;
     width: 300px;
     margin: 0 20px;
-    
-    
     position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content:end;
     align-items: center;
     box-shadow: 1px 1px 10px var(--black);
 }
+
+.price{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--black);
+    padding: 10px;
+    color: var(--white);
+    box-shadow: 1px 1px 5px #373535;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.card-index h2{
+    color: var(--white);
+    z-index: 2;
+}
+
+.card-index hr{
+    height: .5px;
+    width: 90%;
+    background-color:var(--white);
+    border: none;
+    z-index: 2;
+    margin: 20px;
+}
+/* PRODUCTOS */
 
 .Shorts {
     background:url(img/shorts.png);
@@ -203,8 +229,68 @@ header{
     background-position: center;
     background-repeat: no-repeat;
 }
+.Calza-biker {
+    background:url(img/calza-biker.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Cat-suit {
+    background:url(img/cat-suit.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.campera-luxy {
+    background:url(img/campera-luxy.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.campera-oversize {
+    background:url(img/campera-oversize.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.chaqueta-engomada {
+    background:url(img/chaqueta-engomada.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.top-engomado {
+    background:url(img/top-engomado.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.pollera-engomada {
+    background:url(img/pollera-engomada.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.short-engomado {
+    background:url(img/short-engomado.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.pollera-eco-cuero {
+    background:url(img/pollera-ecocuero.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .Carteras {
     background:url(img/carteras.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.test {
+    background:url(img/test.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -243,6 +329,7 @@ header{
     box-shadow: 1px 1px 10px var(--black);
     transition: all .5s ease;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .card-index a:hover {
@@ -564,6 +651,189 @@ footer ul, footer div {
     justify-content: center;
     align-items: center;
 }
+
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-section form {
+    background-color: #fff;
+    margin: 100px;
+    width: 650px;
+    height: 650px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+    border: 1px solid #37353530;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 1px 1px 10px #9c9b9b70;
+}
+
+.input-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#options {
+    text-align: center;
+}
+
+
+
+.input-box h4 {
+    width: 80%;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.input-box input, .input-box select, .input-box textarea {
+    width: 80%;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.input-box textarea {
+    height: 130px;
+    resize: none;
+}
+
+#send-btn {
+    width: 80%;
+    height: 50px;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+#send-btn:hover {
+    background-color: var(--white);
+    color: var(--black);
+    box-shadow: 1px 1px 5px #74737368;
+   
+}
+
+.redes-contacto {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.caja-redes {
+    /* background-color: red; */
+    width: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.caja-redes img {
+    height: 450px;
+}
+
+.contenido-redes-contacto{
+    /* background-color: blue; */
+    flex: 1;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin-left: 50px;
+}
+
+.contenido-redes-contacto h2{
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.contenido-redes-contacto p{
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.contenido-redes-contacto a {
+    color: var(--black);
+    width: 100%;
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    height: 50px;
+    transition: all .5s ease;
+}
+
+.contenido-redes-contacto a:hover {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.search-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.check-filters-cont {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.input-check-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.input-check-cont button {
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.search-cont div input {
+    height: 40px;
+    width: 250px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.search-cont div button {
+    height: 40px;
+    width: 80px;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 18px;
+    box-shadow: 1px 1px 2px #5755553f;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.search-cont div button:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
 
 @media screen and (min-width:1201px) {
     #burguer-menu,#mobile-menu{

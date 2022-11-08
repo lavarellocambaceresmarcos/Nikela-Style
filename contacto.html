@@ -30,10 +30,10 @@
             </ul>
         </nav>
         <ul class="nav-social-list">
-            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
-            <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100083129000783"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/nikela_style/?igshid=YmMyMTA2M2Y%3D"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a target="_blank" href="https://api.whatsapp.com/send?phone=+54%209%201133341558&text=Hola!%20Quiero%20hacerte%20una%20cosulta"><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li><a target="_blank" href="mailto:nikelastyle@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
         </ul>
         <button id="burguer-menu"><i class="fa-solid fa-bars"></i></button>
        
@@ -47,11 +47,11 @@
             <li><a href="contacto.html">Contactanos</a></li>
         </ul>
         <ul class="mobile-nav-social-list">
-            <li class="media-mobile-title">CONTACTANOS</li>
-            <li><a href=""><i class="fa-brands fa-facebook"></i>Facebook</a></li>
-            <li><a href=""><i class="fa-brands fa-instagram"></i>Instagram</a></li>
-            <li><a href=""><i class="fa-brands fa-whatsapp"></i>Whatsapp</a></li>
-            <li><a href=""><i class="fa-solid fa-envelope"></i></a>Gmail</li>
+            <li class="media-mobile-title">REDES</li>
+            <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100083129000783"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/nikela_style/?igshid=YmMyMTA2M2Y%3D"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a target="_blank" href="https://api.whatsapp.com/send?phone=+54%209%201133341558&text=Hola!%20Quiero%20hacerte%20una%20cosulta"><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li><a target="_blank" href="mailto:nikelastyle@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
         </ul>
     </div>
     <!-- home banner -->
@@ -62,8 +62,55 @@
         </div>
     </div>
 
-    <main>
+    <main class="main-contacto">
 
+        <section class="form-section">
+            <form action="https://formspree.io/f/mbjbpnrg" method="POST">
+                <div class="input-box">
+                    <h4>Nombre</h4>
+                    <input type="text" name="message" placeholder="Juan Perez">
+                </div>
+                <div class="input-box">
+                    <h4>Email</h4>
+                    <input type="email" name="_replyto" placeholder="juanperez@something.com">
+                </div>
+                <div class="input-box">
+                    <h4>Razón</h4>
+                    <select name="" name="message" id="options">
+                        <option disabled selected>Seleccionar</option>
+                        <option value="Particular">Particular</option>
+                        <option value="Local">Local interesado</option>
+                        <option value="Revendedor">Revendedor</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <h4>Comentario</h4>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Deje aquí un comentario si así lo desea."></textarea>
+                </div>
+               <button type="submit" id="send-btn">ENVIAR</button>
+            </form>
+        </section>
+
+        <section class="redes-contacto">
+            <div class="caja-redes">
+                <img src="img/facebook-contact-icon.png" alt="">
+                <div class="contenido-redes-contacto">
+                    <h2>ENCONTRANOS EN FACEBOOK</h2>
+                    <p>Publicaciones y ofertas, <br> todos los días</p>
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100083129000783">VER MÁS</a>
+                </div>
+            </div>
+            <div class="caja-redes">
+                <img src="img/instagram-contact.png" alt="">
+                <div class="contenido-redes-contacto">
+                    <h2>SEGUINOS EN INSTAGRAM</h2>
+                    <p>SORTEOS, PRÓXIMOS PRODUCTOS, y MUCHO MÁS</p>
+                    <a target="_blank" href="https://www.instagram.com/nikela_style/?igshid=YmMyMTA2M2Y%3D">VER MÁS</a>
+                </div>
+            </div>
+        </section>
+        
     </main>
 
     <footer>
