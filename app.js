@@ -51,16 +51,16 @@ mayoristaButton.addEventListener('click', function(){
 })
 
 minoristaButton.addEventListener('click', function(){
-    if(a==0){
+    if(b==0){
         infominorista.style.display="flex";
         minoristaButton.style.background="#373535";
         minoristaButton.style.color="#F8F8F8";
-        a=a+1;
-    }else if(a!=0){
+        b=b+1;
+    }else if(b!=0){
         infominorista.style.display="none";
         minoristaButton.style.background="transparent";
         minoristaButton.style.color="#373535";
-        a=0;
+        b=0;
 
         minoristaButton.addEventListener('mouseover', function(){
             minoristaButton.style.background="#373535";
