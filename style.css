@@ -834,6 +834,17 @@ footer ul, footer div {
     color: var(--black);
 }
 
+.info-box {
+    background-color: #373535;
+    height: 200px;
+    width: 60%;
+    color: #F8F8F8;
+    text-align: center;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
 
 @media screen and (min-width:1201px) {
     #burguer-menu,#mobile-menu{
@@ -870,6 +881,10 @@ footer ul, footer div {
     }
 
     .drop-btns-container button {
+        width: 85%;
+    }
+
+    .info-box {
         width: 85%;
     }
 }
@@ -1006,6 +1021,53 @@ footer ul, footer div {
     .nav-logo {
         margin-left: 25px;
     }
+
+    .caja-redes img {
+        height: 390px;
+    }
+
+    .contenido-redes-contacto h2 {
+        font-size: 20px;
+    }
+
+    .caja-redes {
+        /* background-color: red; */
+        width: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        flex-direction: column;
+    }
+
+    .contenido-redes-contacto {
+        /* background-color: blue; */
+        flex: 1;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        margin-left: 0;
+        margin-top: 40px;
+        width: 280px;
+    }
+
+    .form-section form {
+        /* background-color: #fff; */
+        margin: 30px;
+        width: auto;
+        height: 655px;
+        padding-bottom: 40px;
+        padding-top: 10px;
+        border: 1px solid #37353530;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: 1px 1px 10px #9c9b9b70;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -1016,6 +1078,24 @@ footer ul, footer div {
     .title-container h2 {
         text-align: center;
         font-size: 22px;
+    }
+    
+}
+
+@media screen and (max-width:540px) {
+    .form-section form {
+        /* background-color: #fff; */
+        /* margin: -34px; */
+        width: 450px;
+        height: 660px;
+        padding-bottom: 40px;
+        padding-top: 10px;
+        border: 1px solid #37353530;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: 1px 1px 10px #9c9b9b70;
     }
     
 }
