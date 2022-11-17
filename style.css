@@ -283,6 +283,24 @@ header{
     background-position: center;
     background-repeat: no-repeat;
 }
+.zapato-cuero-negro {
+    background:url(img/botas-de-cuero.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.pixie {
+    background:url(img/zapatos-pixie.jfif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.greenShoes {
+    background:url(img/green\ shoes.jfif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .Carteras {
     background:url(img/carteras.png);
     background-size: cover;
