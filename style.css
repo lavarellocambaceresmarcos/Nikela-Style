@@ -194,8 +194,9 @@ header{
     position: absolute;
     top: 0;
     right: 0;
-    background-color: var(--black);
+    background-color: #ba3c3c;
     padding: 10px;
+    font-weight: bolder;
     color: var(--white);
     box-shadow: 1px 1px 5px #373535;
     border-top-left-radius: 5px;
